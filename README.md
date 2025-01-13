@@ -1,1 +1,1 @@
-# Bienevnidad-Despedidas-TicoV1
+# Bienvenidas-Despedidas-TicoV1
