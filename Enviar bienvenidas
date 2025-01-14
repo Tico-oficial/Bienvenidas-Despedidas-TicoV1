@@ -1,0 +1,34 @@
+PREFIJO: $onJoined[$getServerVar[canal-b]]
+
+CÓDIGO----------------------------------------------
+
+$nomention
+$jsonParse[$getUserVar[bienvenida-id;$botID;$guildID]]
+$if[$json[b]==si]
+$title[$replaceText[$replaceText[$replaceText[$json[titulo];{tagg-user};$displayName[$authorID];-1];{nombre-servidor};$serverName[$guildID];-1];{miembros};$membersCount;-1]]
+$description[$replaceText[$replaceText[$replaceText[$json[descripcion];{tagg-user};<@$authorID>;-1];{nombre-servidor};$serverName[$guildID];-1];{miembros};$membersCount;-1]]
+$image[$json[imagen]]
+$footer[$replaceText[$replaceText[$replaceText[$json[footer];{tagg-user};$displayName[$authorID];-1];{nombre-servidor};$serverName[$guildID];-1];{miembros};$membersCount;-1]]
+$footerIcon[$serverIcon]
+$color[$json[color]]
+$endif
+
+$var[tico;1]
+$eval[$repeatMessage[5;
+%{DOL}%if[%{DOL}%roleExists[%{DOL}%json[rol-%{DOL}%var[tico\]\]\]==true\]
+%{DOL}%roleGrant[%{DOL}%authorID\;+%{DOL}%json[rol-%{DOL}%var[tico\]\]\]
+%{DOL}%endif
+%{DOL}%var[tico\;%{DOL}%sum[%{DOL}%var[tico\]\;1\]\]
+]]
+
+$if[$json[auto-n]!=]
+$if[$and[$charCount[$replaceText[$replaceText[$json[auto-n];{name-user};$nickname[$authorID];1];{miembros};$membersCount;1]]<27;$charCount[$nickname[$authorID]]<27]==true]
+$changeUsernameWithID[$authorID;$replaceText[$replaceText[$json[auto-n];{name-user};$nickname[$authorID];1];{miembros};$membersCount;1]]
+$endif
+$endif
+
+$if[$json[anti-bots]==si]
+$if[$isBot[$authorID]==true]
+$kick[$authorID;El sistema anti-bots está activado]
+$endif
+$endif
