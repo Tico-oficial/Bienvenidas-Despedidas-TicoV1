@@ -1,0 +1,26 @@
+PREFIJO: +set (o el que quieras)
+
+CÓDIGO------------------------------
+
+$nomention
+$title[⚙️ | Configuración de bienvenidas y despedidas]
+$description[Este es el apartado para poder configurar tu sistema de bienvenida y despedidas.
+
+**IMPORTANTE:**
+- Si tienes algún problema o encuentras un error/bug abre un hilo en https://discord.com/channels/1308480254733586582/1308482678961733693 o en https://discord.com/channels/1077968892535775262/1093912751497293925 y etiquetame (<@635160512832733185>)
+- **__NO__** doy soporte si __**modificas el código y/o variables**__
+- Por favor asegurate de copiar todo bien para evitar mal abrir hilos
+- Leete el apartado de información para que veas como funciona este sistema]
+$footer[Creditos @Tico]
+$color[6e00ff]
+$newSelectMenu[set-b-i;0;1;⚙️ | Configuración;]
+$addSelectMenuOption[set-b-i;Mensaje de bienvenida;m-b;Configura el mensaje de bienvenida;;🛬;]
+$addSelectMenuOption[set-b-i;Canal de bienvenida;canal-b;Configura el canal de bienvenida;;✉️;]
+$addSelectMenuOption[set-b-i;Auto-roles al entrar;rol;Configura 5(max) auto-roles al entrar al servidor;;🛠️;]
+$addSelectMenuOption[set-b-i;Anti-bots;anti;Activa/desactiva el sistema anti-bots;;🤖;]
+$addSelectMenuOption[set-b-i;Auto-nombre;auto-n;Coloca un auto-nombre al entrar al servidor;;✏️;]
+$addSelectMenuOption[set-b-i;Activar/desactivar sistemas;a-d;Activar/desactiva bienvenidas/despedidas;;⚙️;]
+$addSelectMenuOption[set-b-i;Mensaje de despedida;m-i;Configura el mensaje de despedida;;🛫;]
+$addSelectMenuOption[set-b-i;Canal de despedida;canal-i;Configura el canal de despedida;;✉️;]
+$addSelectMenuOption[set-b-i;Ver configuración;conf;Mira la configuración actual;;👀;]
+$addSelectMenuOption[set-b-i;Información;info;Te explico como funciona este sistema;;📖;]
