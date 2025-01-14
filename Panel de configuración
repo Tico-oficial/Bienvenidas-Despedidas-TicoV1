@@ -10,7 +10,8 @@ $description[Este es el apartado para poder configurar tu sistema de bienvenida 
 - Si tienes algún problema o encuentras un error/bug abre un hilo en https://discord.com/channels/1308480254733586582/1308482678961733693 o en https://discord.com/channels/1077968892535775262/1093912751497293925 y etiquetame (<@635160512832733185>)
 - **__NO__** doy soporte si __**modificas el código y/o variables**__
 - Por favor asegurate de copiar todo bien para evitar mal abrir hilos
-- Leete el apartado de información para que veas como funciona este sistema]
+- Leete el apartado de información para que veas como funciona este sistema
+- Para que los sistemas funcionen debes de configurar sí o sí un canal de bienvenidas, pero tranquilo, ¿no quieres que se envien mensajes de bienvenidas?, pues puedes desactivar esto para que así los demás sistemas funcionen, pero no se envien mensajes de bienvenidas]
 $footer[Creditos @Tico]
 $color[6e00ff]
 $newSelectMenu[set-b-i;0;1;⚙️ | Configuración;]
